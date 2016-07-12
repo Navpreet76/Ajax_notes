@@ -29,10 +29,16 @@
 		width: 100px;
 		height: 100px;
 		border: 1px solid grey;
+		border-top: 10px solid black;
 		display: inline-block;
 		vertical-align: top;
 		padding: 10px;
 		margin: 2px 0;
+		background-color: yellow;
+	}
+	input{
+		font-size: 25px;
+		background-color: yellow;
 	}
 	</style>
 </head>
@@ -50,7 +56,7 @@
 	}
 ?>
 	</div>
-	<h4>Add a note:</h4>
+	<h2>Add a note:</h2>
 	<form id="add_note" action="/notes/create" method="post">
 		<textarea name="note" id="note" cols="30" rows="10"></textarea>	
 		<input type="submit" value="Post It!">
